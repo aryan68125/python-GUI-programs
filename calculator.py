@@ -1,5 +1,3 @@
-#start the video at 57:28
-#video name is free code camp.org = Tkinter course GUIPython
 from tkinter import *
 
 window = Tk()
