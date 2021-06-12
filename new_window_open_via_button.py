@@ -12,7 +12,7 @@ window.title("how to create a new window")
 
 #importing image to our program
 #note this has to be done outside any function otherwise the import will not happen
-image5 = ImageTk.PhotoImage(Image.open("/home/aditya/development/python/imageViewer/icons/linux5.png"))
+#image5 = ImageTk.PhotoImage(Image.open("/home/aditya/development/python/imageViewer/icons/linux5.png"))
 
 #creating a function that will create a new window
 def open_a_new_window():
@@ -25,6 +25,10 @@ def open_a_new_window():
 
 def open_image_in_a_new_window():
    window3 = Toplevel()
+   #importing image to our program
+   #if you are importiong image inside the function then you need to declare image5 as a global variable
+   global image5
+   image5 = ImageTk.PhotoImage(Image.open("/home/aditya/development/python/imageViewer/icons/linux5.png"))
    #puttin image on the screen in our application
    my_lable = Label(window3,image=image5)
    my_lable.grid(row=0,column=0)
