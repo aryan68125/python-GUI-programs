@@ -9,12 +9,14 @@ window.title("add Frames to your python application")
 #padx and pady here will pad the area inside the custom frame that the user has created
 frame = LabelFrame(window,text="This is my custom frame",padx=5,pady=5)
 #putting our cutom frame in our application on pur screen
-#padx and pady will pad the area outside the custome frame that the user has created
+#padx and pady will pad the area outside the custome frame that the user has create
+#padx=10,pady=10 will come outside the frame that we have created here
 frame.pack(padx=10,pady=10)
 
 #now this time we won't be putting our button in window we will be putting our button in the frame that is 
 #already inside the window of our application
 button = Button(frame,text="click me!!")
+#padx=10,pady=10 will come inside the frame that we have created here
 button.grid(row=0,column=0,padx=10,pady=10)
 button2 = Button(frame,text="click me!!")
 button2.grid(row=1,column=0,padx=10,pady=10)
