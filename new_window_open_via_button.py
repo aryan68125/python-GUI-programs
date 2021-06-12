@@ -11,6 +11,7 @@ window = Tk()
 window.title("how to create a new window")
 
 #importing image to our program
+#note this has to be done outside any function otherwise the import will not happen
 image5 = ImageTk.PhotoImage(Image.open("/home/aditya/development/python/imageViewer/icons/linux5.png"))
 
 #creating a function that will create a new window
