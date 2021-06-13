@@ -17,6 +17,12 @@ def horval():
     #we can here set the size of our window
     window.geometry("400x"+str(horizontal.get()))
 
+#the function below will get the value of horizontal =deekbar as soon as the user slides it
+def gethorizontal(v):
+    seekbar_value = Label(window,text = "horizontal seekbar realtime value = "+str(horizontal_seekbar.get()))
+    seekbar_value.grid(row=2,column=1)
+    
+
 #creating a seekbar
 vertical = Scale(window,from_=200,to=1000,orient=VERTICAL,)
 vertical.grid(row=0,column=0)
@@ -29,4 +35,8 @@ vertical_button.grid(row=0,column=1)
 
 horizontal_button = Button(window,text="get vertical seekbar value",command = horval)
 horizontal_button.grid(row=1,column=1)
+
+#new seek bar horizontal
+horizontal_seekbar = Scale(window,from_=200,to=1000,orient = HORIZONTAL,command=gethorizontal)
+horizontal_seekbar.grid(row=2,column=0)
 window.mainloop()
