@@ -1,0 +1,10 @@
+FileDialog Options
+Discussing each function individually would get very repetitive and redundant since they all share the same options (one or two exceptions). Hence we’ll listed these options down below and simply provided examples of several of the above functions. Most of it is pretty self explanatory.
+
+parent – The Window on to which the dialog is to be placed
+title – The name that appears on the dialog
+initialdir – The directory the dialog first opens up in.
+initialfile – The file that the dialog has selected when it is opened.
+filetypes – Determines that type of the files to be loaded/saved in the dialogs. Passed as a tuple in a (Label, Filetype) format. You may also use the * wild card which applies to all filetypes. You can pass multiple tuples as well for multiple options.
+defaultextension – Default extension to be applied to files when appending to them. (Only applies to save dialogs)
+multiple – When true, it allows the selection of multiple items.
